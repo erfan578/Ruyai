@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet"
+        type="text/css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./tailwind/output.css">
+    <style>
+        @media (max-width: 800px) {
+            .art-gallery {
+                column-gap: 12px !important;
+            }
+        }
+    </style>
+    <title>Ruyai</title>
+</head>
+
+<body>
+    <div class="container mb-5 px-3">
+        <header class="flex justify-between md:py-7 py-4 font-vazirmatn">
+            <img class="md:w-24 w-20" src="./assets/images/logo-black.svg" alt="">
+            <div class="md:flex hidden items-center">
+                <nav class="flex xl:gap-17 lg:gap-14 gap-10 lg:mr-14 mr-10">
+                    <a href="#" class="text-[#262626] text-sm">Home</a>
+                    <a href="#" class="flex items-center text-[#262626] text-sm">
+                        <span class="mr-2">Categories</span>
+                        <img class="w-3 mb-0.5" src="./assets/icons/angle-down.svg" alt="">
+                    </a>
+                    <a href="#" class="flex items-center text-[#262626] text-sm">
+                        <span class="mr-2">Resources</span>
+                        <img class="w-3 mb-0.5" src="./assets/icons/angle-down.svg" alt="">
+                    </a>
+                    <a href="#" class="flex items-center text-[#262626] text-sm">
+                        <span class="mr-2">Company</span>
+                        <img class="w-3 mb-0.5" src="./assets/icons/angle-down.svg" alt="">
+                    </a>
+                </nav>
+                <button
+                    class="w-40 pb-1 pt-2 bg-[#F9FAFB] text-center text-[#111827] text-[15px] font-semibold rounded-md border-solid border-[1px] border-[#111827]">Sign
+                    Up</button>
+            </div>
+            <div class="md:hidden flex">
+                <button>
+                    <img class="w-8" src="./assets/icons/menu.svg" alt="">
+                </button>
+            </div>
+        </header>
+        <section class="flex lg:flex-row flex-col-reverse justify-between md:py-10 py-20">
+            <div class="font-poppins lg:w-[36%] w-full">
+                <h1
+                    class="relative md:mb-5 mb-3.5 text-[#374151] lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-normal lg:!leading-[5rem] md:!leading-[4rem] sm:!leading-[3rem] !leading-[2.5rem]">
+                    Bring <br class="lg:flex hidden"> <span class="text-[#111827] font-bold">your dream</span> <br> into
+                    <span class="text-[#111827] font-bold">reality</span>
+                    <img class="absolute top-[110px] lg:right-[30px] xl:right-[130px] 2xl:right-[220px] z-[-1] lg:block hidden w-[320px]"
+                        src="./assets/images/highlight.svg" alt="">
+                </h1>
+                <p class="text-[#374151] lg:mb-4 mb-5 md:text-base text-sm">holder text commonly used to demonstrate the
+                    visual form of a document or
+                    a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before
+                    final c</p>
+                <button
+                    class="flex md:justify-start justify-center items-center md:w-fit w-full bg-[#122256] md:px-20 px-6 md:py-2 py-1.5 text-white md:text-base text-[15px] rounded-md">Start
+                    Design Your Gift
+                    <img class="w-4 ml-2.5" src="./assets/icons/arrow-right.svg" alt="">
+                </button>
+            </div>
+            <div class="lg:w-[55%] w-full">
+                <div class="relative bg-white md:mb-0 mb-5 rounded-md lg:shadow-[0_0_80px_#f1f3f7] shadow-none">
+                    <img class="lg:block hidden" src="./assets/images/frame.png" alt="">
+                    <img class="lg:hidden block" src="./assets/images/frame-mobile.png" alt="">
+                    <div
+                        class="absolute lg:top-[100px] top-[-35px] md:right-[50%] md:translate-x-[50%] grid grid-cols-[auto_min-content] gap-3 md:w-[90%] sm:w-[70%] w-[85%] md:px-4 px-1.5 md:py-3 py-1.5 md:mb-0 mb-10 bg-[#F3F4F6] md:rounded-md rounded-[4px]">
+                        <input
+                            class="w-full md:pl-0 pl-2 bg-transparent font-poppins md:text-base text-xs outline-none placeholder:text-[#6B7280] placeholder:font-poppins placeholder:text-xs md:placeholder:text-base"
+                            type="text" placeholder="Describe Your Dream...">
+                        <button
+                            class="bg-[#122256] md:px-10 sm:px-5 px-2.5 pt-2 pb-1 text-[#FAFAFA] md:text-base text-xs font-vazirmatn md:rounded-md rounded-[4px]">Generate</button>
+                    </div>
+                    <div
+                        class="absolute bottom-[50%] left-[-60px] translate-y-[50%] lg:flex hidden flex-col items-center">
+                        <button
+                            class="w-[4.5rem] h-[4.5rem] flex justify-center items-center mb-5 bg-gradient-to-b from-[#122256] to-[#4465D1] rounded-full shadow-[0_12px_20px_#cfcfdd]">
+                            <img class="w-6" src="./assets/icons/play.svg" alt="">
+                        </button>
+                        <span class="uppercase text-[#122256] text-sm font-poppins">see how it works</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="md:py-24 py-16 font-poppins">
+            <h2 class="lg:text-4xl md:text-3xl text-2xl text-center text-[#14142B] mb-10">My <span
+                    class="font-bold">Dream on...</span></h2>
+            <div class="flex md:flex-nowrap flex-wrap md:justify-evenly justify-center md:gap-0 gap-3">
+                <div
+                    class="flex md:flex-col flex-row items-center md:gap-0 gap-2 w-fit md:px-0 md:py-0 px-3 py-3.5 md:bg-transparent bg-[#F5F3FF] md:rounded-none rounded-xl">
+                    <span
+                        class="flex justify-center items-center md:w-14 md:h-14 w-fit h-fit md:mb-2 mb-0 bg-[#F5F3FF] rounded-md">
+                        <img class="w-6 h-6" src="./assets/icons/apparel.svg" alt="">
+                    </span>
+                    <span class="text-[#111827] md:text-base text-sm">Apparel</span>
+                </div>
+                <div
+                    class="flex md:flex-col flex-row items-center md:gap-0 gap-2 w-fit md:px-0 md:py-0 px-3 py-3.5 md:bg-transparent bg-[#E6F9F6] md:rounded-none rounded-xl">
+                    <span
+                        class="flex justify-center items-center md:w-14 md:h-14 w-fit h-fit md:mb-2 mb-0 bg-[#E6F9F6] rounded-md">
+                        <img class="w-6 h-6" src="./assets/icons/calendar.svg" alt="">
+                    </span>
+                    <span class="text-[#111827] md:text-base text-sm">Calendars</span>
+                </div>
+                <div
+                    class="flex md:flex-col flex-row items-center md:gap-0 gap-2 w-fit md:px-0 md:py-0 px-3 py-3.5 md:bg-transparent bg-[#E4F4FE] md:rounded-none rounded-xl">
+                    <span
+                        class="flex justify-center items-center md:w-14 md:h-14 w-fit h-fit md:mb-2 mb-0 bg-[#E4F4FE] rounded-md">
+                        <img class="w-6 h-6" src="./assets/icons/wallart.svg" alt="">
+                    </span>
+                    <span class="text-[#111827] md:text-base text-sm">Wallart</span>
+                </div>
+                <div
+                    class="flex md:flex-col flex-row items-center md:gap-0 gap-2 w-fit md:px-0 md:py-0 px-3 py-3.5 md:bg-transparent bg-[#FFE9F2] md:rounded-none rounded-xl">
+                    <span
+                        class="flex justify-center items-center md:w-14 md:h-14 w-fit h-fit md:mb-2 mb-0 bg-[#FFE9F2] rounded-md">
+                        <img class="w-6 h-6" src="./assets/icons/mug.svg" alt="">
+                    </span>
+                    <span class="text-[#111827] md:text-base text-sm">Mugs</span>
+                </div>
+                <div
+                    class="flex md:flex-col flex-row items-center md:gap-0 gap-2 w-fit md:px-0 md:py-0 px-3 py-3.5 md:bg-transparent bg-[#F4EFEF] md:rounded-none rounded-xl">
+                    <span
+                        class="flex justify-center items-center md:w-14 md:h-14 w-fit h-fit md:mb-2 mb-0 bg-[#F4EFEF] rounded-md">
+                        <img class="w-6 h-6" src="./assets/icons/mobile.svg" alt="">
+                    </span>
+                    <span class="text-[#111827] md:text-base text-sm">Phonecases</span>
+                </div>
+                <div
+                    class="flex md:flex-col flex-row items-center md:gap-0 gap-2 w-fit md:px-0 md:py-0 px-3 py-3.5 md:bg-transparent bg-[#FFF4EB] md:rounded-none rounded-xl">
+                    <span
+                        class="flex justify-center items-center md:w-14 md:h-14 w-fit h-fit md:mb-2 mb-0 bg-[#FFF4EB] rounded-md">
+                        <img class="w-6 h-6" src="./assets/icons/cards.svg" alt="">
+                    </span>
+                    <span class="text-[#111827] md:text-base text-sm">Cards</span>
+                </div>
+                <div
+                    class="flex md:flex-col flex-row items-center md:gap-0 gap-2 w-fit md:px-0 md:py-0 px-3 py-3.5 md:bg-transparent bg-[#FFF8E9] md:rounded-none rounded-xl">
+                    <span
+                        class="flex justify-center items-center md:w-14 md:h-14 w-fit h-fit md:mb-2 mb-0 bg-[#FFF8E9] rounded-md">
+                        <img class="w-6 h-6" src="./assets/icons/mobile.svg" alt="">
+                    </span>
+                    <span class="text-[#111827] md:text-base text-sm">Wallpaper</span>
+                </div>
+            </div>
+        </section>
+        <section class="flex md:flex-row flex-col justify-between py-16 font-poppins">
+            <div class="relative md:w-[30%] w-full">
+                <span class="block md:mb-4 mb-1.5 uppercase text-[#9CA3AF] text-sm md:font-bold font-normal">Factory
+                    quality assurance</span>
+                <h1 class="lg:text-4xl md:text-3xl text-2xl mb-10 text-[#111827] font-normal leading-[3rem]">
+                    <span class="font-bold">how to</span> your dream
+                    a reality?
+                </h1>
+                <span class="md:block hidden text-[#232340] text-2xl">As easy as</span>
+                <img class="md:block hidden absolute top-[-110px] left-[-40px] z-[-1]" src="./assets/images/line.svg"
+                    alt="">
+                <img class="md:block hidden absolute top-[250px] right-[50%] z-[-1] translate-x-[50%]"
+                    src="./assets/images/123.svg" alt="">
+            </div>
+            <div class="flex flex-col gap-12 md:w-[50%] w-full pr-24">
+                <div>
+                    <img class="mb-4" src="./assets/icons/note.svg" alt="">
+                    <h3 class="mb-2 text-[#111827] text-xl font-medium">Your dream on</h3>
+                    <p class="text-[#4B5563] text-sm leading-7">
+                        The Web Development course is beginner-friendly, with no prerequisites required. What counts for
+                        us is that you’re motivated to start your new tech journey.
+                    </p>
+                </div>
+                <div>
+                    <img class="mb-4" src="./assets/icons/magicpen.svg" alt="">
+                    <h3 class="mb-2 text-[#111827] text-xl font-medium">dream into reality</h3>
+                    <p class="text-[#4B5563] text-sm leading-7">
+                        When you apply, we’ll get back to you to schedule a 30 minute video interview. We'll talk about
+                        your professional project and your motivation.
+                    </p>
+                </div>
+                <div>
+                    <img class="mb-4" src="./assets/icons/cart.svg" alt="">
+                    <h3 class="mb-2 text-[#111827] text-xl font-medium">Order</h3>
+                    <p class="text-[#4B5563] text-sm leading-7">
+                        You will take a technical quiz to assess your coding knowledge, your capacity to learn like you
+                        Would at CODED.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="md:py-24 py-8 font-poppins">
+            <div class="flex flex-col items-center">
+                <span
+                    class="md:mb-4 mb-0 uppercase text-[#8A8A8A] text-sm md:font-bold font-normal tracking-widest">Explore</span>
+                <h2 class="lg:text-4xl md:text-3xl text-2xl text-center text-[#14142B] md:mb-12 mb-6">Art <span
+                        class="font-bold">Gallery</span></h2>
+            </div>
+            <div class="art-gallery columns-3 mb-4" style="column-gap: 30px;">
+                <img class="w-full h-auto md:mb-[30px] mb-[12px]" src="./assets/images/paintings/1.png" alt="">
+                <img class="w-full h-auto md:mb-[30px] mb-[12px]" src="./assets/images/paintings/4.png" alt="">
+                <img class="w-full h-auto md:mb-[30px] mb-[12px]" src="./assets/images/paintings/2.png" alt="">
+                <img class="w-full h-auto md:mb-[30px] mb-[12px]" src="./assets/images/paintings/5.png" alt="">
+                <img class="w-full h-auto md:mb-[30px] mb-[12px]" src="./assets/images/paintings/3.png" alt="">
+                <img class="w-full h-auto md:mb-[30px] mb-[12px]" src="./assets/images/paintings/6.png" alt="">
+            </div>
+            <div class="md:flex hidden justify-center">
+                <button class="flex items-center text-[#122256] font-medium">Explore More
+                    <img class="ml-2" src="./assets/icons/arrow-right-black.svg" alt="">
+                </button>
+            </div>
+        </section>
+        <section class="md:py-24 py-10 font-poppins">
+            <div class="flex flex-col items-center">
+                <span
+                    class="md:mb-4 mb-0 uppercase text-[#8A8A8A] text-sm md:font-bold font-normal tracking-widest">Insight</span>
+                <h2 class="lg:text-4xl md:text-3xl text-2xl text-center font-bold text-[#14142B] md:mb-12 mb-6">Blog <span
+                        class="font-normal">&</span>
+                    News</h2>
+            </div>
+            <div class="flex md:flex-row flex-col justify-between lg:gap-12 gap-6 mb-6">
+                <div class="md:w-[50%] w-full">
+                    <img class="w-full md:mb-5 mb-3" src="./assets/images/pictures/1.png" alt="">
+                    <h4
+                        class="sm:w-[70%] w-full md:mb-5 mb-2 text-[#14142B] md:text-xl text-base md:font-semibold font-medium md:leading-7 leading-6">
+                        Top Wall Street analysts see
+                        stocks as long term winners</h4>
+                    <div class="flex gap-8">
+                        <span class="text-[#676E87] md:text-[13px] text-xs">November 15, 2021</span>
+                        <span class="flex text-[#676E87] md:text-[13px] text-xs"><img class="mr-2"
+                                src="./assets/icons/tag.svg" alt=""> Investment</span>
+                    </div>
+                </div>
+                <div class="md:flex hidden flex-col gap-7 w-[50%] pr-16 mb-5">
+                    <div class="flex md:flex-row flex-col md:gap-0 gap-2 md:w-full w-[80%]">
+                        <img class="lg:w-64 md:w-40 w-full h-fit md:mr-5 mr-0" src="./assets/images/pictures/2.png" alt="">
+                        <div class="flex flex-col justify-center">
+                            <h4
+                                class="md:mb-3 mb-1 text-[#14142B] md:text-[15px] text-sm md:font-semibold font-normal leading-5">
+                                Inflation has created
+                                growing correlation stock and crypto</h4>
+                            <div class="flex gap-5">
+                                <span class="text-[#676E87] md:text-[13px] text-xs">November 15, 2021</span>
+                                <span class="flex text-[#676E87] text-[13px]"><img class="w-3 mr-1"
+                                        src="./assets/icons/tag.svg" alt=""> Investment</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex md:flex-row flex-col md:gap-0 gap-2 md:w-full w-[80%]">
+                        <img class="lg:w-64 md:w-40 w-full h-fit md:mr-5 mr-0" src="./assets/images/pictures/3.png" alt="">
+                        <div class="flex flex-col justify-center">
+                            <h4
+                                class="md:mb-3 mb-1 text-[#14142B] md:text-[15px] text-sm md:font-semibold font-normal leading-5">
+                                Inflation has created
+                                growing correlation stock and crypto</h4>
+                            <div class="flex gap-5">
+                                <span class="text-[#676E87] md:text-[13px] text-xs">November 15, 2021</span>
+                                <span class="flex text-[#676E87] text-[13px]"><img class="w-3 mr-1"
+                                        src="./assets/icons/tag.svg" alt=""> Investment</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex md:flex-row flex-col md:gap-0 gap-2 md:w-full w-[80%]">
+                        <img class="lg:w-64 md:w-40 w-full h-fit md:mr-5 mr-0" src="./assets/images/pictures/4.png" alt="">
+                        <div class="flex flex-col justify-center">
+                            <h4
+                                class="md:mb-3 mb-1 text-[#14142B] md:text-[15px] text-sm md:font-semibold font-normal leading-5">
+                                Inflation has created
+                                growing correlation stock and crypto</h4>
+                            <div class="flex gap-5">
+                                <span class="text-[#676E87] md:text-[13px] text-xs">November 15, 2021</span>
+                                <span class="flex text-[#676E87] text-[13px]"><img class="w-3 mr-1"
+                                        src="./assets/icons/tag.svg" alt=""> Investment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper mySwiper md:hidden flex flex-col lg:gap-7 gap-4 md:w-[50%] w-full md:pr-16 pr-0 mb-5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex md:flex-row flex-col md:gap-0 gap-2 md:w-full w-[80%]">
+                            <img class="lg:w-64 md:w-40 w-full h-fit md:mr-5 mr-0" src="./assets/images/pictures/2.png" alt="">
+                            <div class="flex flex-col justify-center">
+                                <h4
+                                    class="md:mb-3 mb-1 text-[#14142B] md:text-[15px] text-sm md:font-semibold font-normal leading-5">
+                                    Inflation has created
+                                    growing correlation stock and crypto</h4>
+                                <div class="flex gap-5">
+                                    <span class="text-[#676E87] md:text-[13px] text-xs">November 15, 2021</span>
+                                    <span class="flex text-[#676E87] text-[13px]"><img class="w-3 mr-1"
+                                            src="./assets/icons/tag.svg" alt=""> Investment</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide flex md:flex-row flex-col md:gap-0 gap-2 md:w-full w-[80%]">
+                            <img class="lg:w-64 md:w-40 w-full h-fit md:mr-5 mr-0" src="./assets/images/pictures/3.png" alt="">
+                            <div class="flex flex-col justify-center">
+                                <h4
+                                    class="md:mb-3 mb-1 text-[#14142B] md:text-[15px] text-sm md:font-semibold font-normal leading-5">
+                                    Inflation has created
+                                    growing correlation stock and crypto</h4>
+                                <div class="flex gap-5">
+                                    <span class="text-[#676E87] md:text-[13px] text-xs">November 15, 2021</span>
+                                    <span class="flex text-[#676E87] text-[13px]"><img class="w-3 mr-1"
+                                            src="./assets/icons/tag.svg" alt=""> Investment</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide flex md:flex-row flex-col md:gap-0 gap-2 md:w-full w-[80%]">
+                            <img class="lg:w-64 md:w-40 w-full h-fit md:mr-5 mr-0" src="./assets/images/pictures/4.png" alt="">
+                            <div class="flex flex-col justify-center">
+                                <h4
+                                    class="md:mb-3 mb-1 text-[#14142B] md:text-[15px] text-sm md:font-semibold font-normal leading-5">
+                                    Inflation has created
+                                    growing correlation stock and crypto</h4>
+                                <div class="flex gap-5">
+                                    <span class="text-[#676E87] md:text-[13px] text-xs">November 15, 2021</span>
+                                    <span class="flex text-[#676E87] text-[13px]"><img class="w-3 mr-1"
+                                            src="./assets/icons/tag.svg" alt=""> Investment</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <button class="md:flex hidden items-center text-[#122256] font-medium">View our Blog
+                    <img class="ml-2" src="./assets/icons/arrow-right-black.svg" alt="">
+                </button>
+            </div>
+        </section>
+    </div>
+    <footer class="w-full bg-[#000611] py-10 font-poppins rounded-t-[30px]">
+        <div class="container">
+            <div class="flex md:flex-row flex-col justify-between md:gap-20 gap-14 md:px-0 px-5">
+                <div class="md:order-1 order-3 md:w-[40%] w-full lg:pr-16 pr-10">
+                    <img class="mb-5" src="./assets/images/logo-white.svg" alt="">
+                    <p
+                        class="text-white text-sm font-normal leading-6 md:mb-5 mb-4">
+                        Nam posuere accumsan porta. Integer id orci sed ante tincidunt tincidunt sit amet sed libero.Nam
+                        posuere accumsan porta.
+                    </p>
+                    <hr class="md:hidden block border-slate-600 mb-4">
+                    <div class="flex items-center gap-3">
+                        <a href="#">
+                            <img class="w-5" src="./assets/icons/instagram.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="w-5" src="./assets/icons/facebook.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="w-5" src="./assets/icons/twitter.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="w-5" src="./assets/icons/youtube.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="order-2 md:block hidden w-[20%]">
+                    <h5 class="uppercase text-[#7082A1] font-medium tracking-widest md:mb-7 mb-6">Courses</h5>
+                    <ul class="flex flex-col gap-2">
+                        <li><a class="text-white text-sm duration-150 hover:pl-2 hover:text-[#FF9900]"
+                                href="#">Full-Stack bootcamp</a></li>
+                        <li><a class="text-white text-sm duration-150 hover:pl-2 hover:text-[#FF9900]"
+                                href="#">Juniors</a></li>
+                        <li><a class="text-white text-sm duration-150 hover:pl-2 hover:text-[#FF9900]"
+                                href="#">Codes</a></li>
+                        <li><a class="text-white text-sm duration-150 hover:pl-2 hover:text-[#FF9900]"
+                                href="#">Unicode</a></li>
+                        <li><a class="text-white text-sm duration-150 hover:pl-2 hover:text-[#FF9900]"
+                                href="#">Enterprise Bootcamp</a></li>
+                    </ul>
+                </div>
+                <div class="md:order-3 order-1 md:w-[20%] w-full">
+                    <h5 class="uppercase text-[#7082A1] font-medium tracking-widest mb-7">Services</h5>
+                    <ul class="flex flex-col gap-2">
+                        <li><a class="text-white text-sm duration-150 hover:pl-2 hover:text-[#FF9900]" href="#">ROYA
+                                Factory</a></li>
+                        <li><a class="text-white text-sm duration-150 hover:pl-2 hover:text-[#FF9900]"
+                                href="#">Enterprise</a></li>
+                        <li><a class="text-white text-sm duration-150 hover:pl-2 hover:text-[#FF9900]"
+                                href="#">Schools</a></li>
+                        <li><a class="text-white text-sm duration-150 hover:pl-2 hover:text-[#FF9900]" href="#">Hire our
+                                graduates</a></li>
+                        <li><a class="text-white text-sm duration-150 hover:pl-2 hover:text-[#FF9900]"
+                                href="#">Enterprise Bootcamp</a></li>
+                    </ul>
+                </div>
+                <div class="md:order-4 order-2 md:w-[20%] w-full">
+                    <h5 class="uppercase text-[#7082A1] font-medium tracking-widest md:mb-7 mb-6">resources</h5>
+                    <ul class="flex flex-col gap-2">
+                        <li><a class="text-white text-sm duration-150 hover:pl-2 hover:text-[#FF9900]"
+                                href="#">About</a></li>
+                        <li><a class="text-white text-sm duration-150 hover:pl-2 hover:text-[#FF9900]"
+                                href="#">Events</a></li>
+                        <li><a class="text-white text-sm duration-150 hover:pl-2 hover:text-[#FF9900]"
+                                href="#">Support</a></li>
+                        <li><a class="text-white text-sm duration-150 hover:pl-2 hover:text-[#FF9900]"
+                                href="#">Careers</a></li>
+                        <li><a class="text-white text-sm duration-150 hover:pl-2 hover:text-[#FF9900]"
+                                href="#">Blogs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 20,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+</script>
